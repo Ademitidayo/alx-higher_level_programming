@@ -1,4 +1,4 @@
-# relationship_city.py
+#!/usr/bin/python3
 
 from sqlalchemy import Column, Integer, String, ForeignKey
 from sqlalchemy.orm import relationship
