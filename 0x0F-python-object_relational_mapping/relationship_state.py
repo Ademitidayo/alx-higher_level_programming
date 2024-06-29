@@ -12,10 +12,3 @@ class State(Base):
     id = Column(Integer, primary_key=True, autoincrement=True)
     name = Column(String(256), nullable=False)
     cities = relationship("City", backref="state", cascade="all, delete-orphan")
-
-class City(Base):
-    __tablename__ = 'cities'
-
-    id = Column(Integer, primary_key=True, autoincrement=True)
-    name = Column(String(256), nullable=False)
-    state_id = Column(Integer, ForeignKey('states.id'), nullable=False)
