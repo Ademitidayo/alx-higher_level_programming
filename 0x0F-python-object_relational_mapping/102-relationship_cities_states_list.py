@@ -6,7 +6,7 @@ Lists all City objects from the database hbtn_0e_101_usa
 import sys
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from relationship_city import Base, City, State
+from relationship_state import Base, City
 
 def list_cities_states(engine):
     """Fetches and prints all City objects with associated State names."""
