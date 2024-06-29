@@ -27,6 +27,6 @@ if __name__ == "__main__":
     username, password, database = sys.argv[1], sys.argv[2], sys.argv[3]
     engine = create_engine(f'mysql+mysqldb://{username}:{password}@localhost:3306/{database}')
 
-    Base.metadata.create_all(engine)  # Ensures all tables are created
+    Base.metadata.create_all(engine)
 
     list_cities_states(engine)
