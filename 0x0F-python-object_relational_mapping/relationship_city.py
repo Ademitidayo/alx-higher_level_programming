@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-
+"""
+instruct
+"""
 from sqlalchemy import Column, Integer, String, ForeignKey
 from sqlalchemy.orm import relationship
 from sqlalchemy.ext.declarative import declarative_base
@@ -7,6 +9,7 @@ from sqlalchemy.ext.declarative import declarative_base
 Base = declarative_base()
 
 class City(Base):
+    """ documented"""
     __tablename__ = 'cities'
 
     id = Column(Integer, primary_key=True, autoincrement=True)
